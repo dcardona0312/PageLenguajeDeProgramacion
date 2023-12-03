@@ -10,53 +10,40 @@
     <header>
         <h1>TERCER CORTE</h1>
     </header>
+    
     <div class="contenedor">
         <div class="info">
-            <h4>
-                En este ultimo corte, concluimos con el retomar java, aprendiendo a usar los hilos, y te preguntaras que son? bueno, estos hilos son
-                como lineas de tiempo, que se definen, inician y se les da su tarea, pero... para que sirve? bueno sirve para reducir el tiempo
-                de ejecucion de un programa, bueno ayuda para ello, haciendo que un programa que tenga que ejecutar o hacer diferentes funciones
-                no las haga cada una por separado sino crear un hilo para cada una y asi reducir el tiempo.
-                Por ejemplo piensa en que debes hacer 2 sumas, 2 restas, 2 divisiones y 2 multiplicaciones con 2 numeros diferentes,
-                esto es simple puedes crear 4 hilos y unirlos al hilo principal el cual es donde corre el programa y al final los hilos se unen
-                a este, aqui un ejemplo en codigo!
-            </h4>
-
-            <h4>Aqui te muestro nuestro primer ejercicio el cual es solo con 2 hilos, donde en cada uno solamente se hace una operacion y en este caso es
-                acerca d una cuenta de banco, donde en un hilo se podra retirar y en el otro consignar, dando un error si intentamos retirar mas de lo que
-                ya tenemos en nuestra cuenta, algo sencillo 
-            </h4>
-            <br>
-            <h4>Clase de retiros y depositos</h4>
-            <img src="./img/ejer1_hilos.png" alt="hilos_ejer1">
-            <br>
-            <h4>clase Main incializando, creando y ejecutando hilos</h4>
-            <img src="./img/ejer2_hilos.png" alt="hilos_ejer1">
-            <br>
-
-            <h4>Aqui te muestro un ejemplo de la suma de dos matrices, donde cada hilo se crea, luego se inicializa, se le da su tarea y vuelve al hilo
-                principal para entregar su resultado, haciendo que sume por fila la matriz y nos de una matriz resultante
-            </h4>
-            <br>
-            <img src="./img/suma_matrices_hilos.png" alt="hilos_matrices">
-            <br>
-
-            <h4>Aqui te muestro el ultimo ejemplo acerca de un restaurante con al menos 2 chef y 2 meseros
-                donde cada mesero toma la "orden" de un plato y cada chef "prepara" dicho plato, haciendo esto en sincronia, es decir cada
-                realizacion para en su hilo de creacion y asi no se chocan, haciendo un codigo mas eficiente
-            </h4>
-            <br>
-            <h4>Clase Chef</h4>
-            <img src="./img/preparcial_1.png" alt="Preparcial_1">
-            <br>
-            <h4>Clase Mesero</h4>
-            <img src="./img/preparcial_2.png" alt="Preparcial_2">
-            <br>
-            <h4>Clase Main</h4>
-            <img src="./img/preparcial_3.png" alt="Preparcial_3">
-            <br>
-        </div>
-
+            <p>
+                En el último tramo del curso, nos sumergimos nuevamente en Java, trabajamos muchos de los ejercicios en pareja y aprendimos el tema de los hilos. 
+            </p>
+            <script>
+                function toggleInfo(temaId) {
+                    var infoDiv = document.getElementById(temaId + 'Info');
+                    infoDiv.style.display = (infoDiv.style.display === 'none') ? 'block' : 'none';
+                }
+            </script>
+            <div class="temas">
+                <ul class="themes">
+                    <li>
+                        <button onclick="toggleInfo('tema7')">HILOS</button>
+                        <div id="tema7Info" class="info-oculta">
+                    
+                        <p>ayudan a que un programa que debe realizar diversas funciones no lo haga secuencialmente, 
+                        sino que se asignen hilos individuales a cada tarea, optimizando así el rendimiento.
+                        Para ilustrar esto, considera la situación en la que debes realizar 2 sumas, 2 restas, 2 divisiones y 2 multiplicaciones con 2 conjuntos de números diferentes. La solución es bastante clara: puedes crear 4 hilos, 
+                        vincularlos al hilo principal (donde se ejecuta el programa) y, al finalizar, unirlos a este. 
+                    </p>
+                        <img src="img/Hilos1.png">
+                        <img src="img/Hilos2.png">
+                    
+                        <p>Realizamos tambien una suma de matrices, creando los hilos para darles una tarea</p>
+                        <img src="img/Matrices.png">
+                        </div>
+                    </li>
+                </ul>   
+                <p>Aqui llegamos al final, espero hallan entendido el resumen de mi curso en Lenguajes de Programacion 
+                    <br> 
+                    Muchas Gracias Profesor!</p>
         <div class="botones">
             <a href="index.html"><button>Principal</button></a>
             <a href="Primer_corte.html"><button>Corte 1</button></a>
