@@ -13,60 +13,93 @@
 
     <div class="contenedor">
         <div class="info">
-            <h4>
-                En este segundo corte lo que mas puedo destacar que utilizamos es la programacion orientada a objetos en python, tambien nuevos 
-                patrones de diseño como el adapter y observer, con ellos trabajamos algunos ejemplos de la suscripcion a un canal de suscripcion 
-                con el patron de observer y con el adapter lo que hicimos fue trabajar la conversion de pesos colombianos a dolares y de metros 
-                a pies, observalo por ti mismo!
+            <p>
+                En esta segunda etapa, quiero resaltar especialmente el uso de la programación orientada a objetos en Python. 
+                Además, exploramos nuevos patrones de diseño, como el adaptador (adapter) y el observador (observer).
                 <br>
-                <br>
-                Algunos temas son:
-            </h4>
-        
+            </p>
+            <script>
+                function toggleInfo(temaId) {
+                    var infoDiv = document.getElementById(temaId + 'Info');
+                    infoDiv.style.display = (infoDiv.style.display === 'none') ? 'block' : 'none';
+                }
+            </script>
             <div class="temas">
-                <ol>
-                    <li>Patrones de diseño</li>
-                    <li>Modelo, Vista, Controlador</li>
-                    <li>Patron de diseño Adapter</li>
-                    <li>Patron de diseño Observer</li>
-                    <li>Programacion Orientada a Objetos</li>
-                </ol>
+                <ul class="themes">
+                    <li>
+                        <button onclick="toggleInfo('tema5')">POO EN PYTHON</button>
+                        <div id="tema5Info" class="info-oculta">
+                            <p>Seguimos con Python y un tema importante, La programacion orientada a objetos, podemos decir que: <br>
+                        
+                                <h4>Abstracción:</h4> Al crear una clase con métodos y atributos, nos sumergimos en el concepto de abstracción. 
+                                Este enfoque nos permite trabajar con la esencia fundamental de los objetos y sus interacciones.
+
+                                <h4>Encapsulamiento:</h4> En el ámbito de las clases, el encapsulamiento se manifiesta al tener atributos tanto públicos como privados. 
+                                Esto permite controlar el acceso a ciertos datos y funcionalidades, brindando una capa adicional de seguridad y modularidad.
+                                
+                                <h4>Polimorfismo:</h4> La capacidad de que clases, funciones y operadores adopten diversos comportamientos es lo que define al polimorfismo. 
+                                Esta característica facilita la flexibilidad del código al permitir que entidades similares compartan nombres pero ejecuten acciones distintas. 
+                                Además, el polimorfismo se puede sobrecargar para adaptarse a diferentes contextos y mostrar datos de manera específica.
+                                
+                                <h4>Herencia </h4> La herencia es una herramienta fundamental para generalizar clases, es decir, identificar y definir atributos comunes entre dos o más clases. 
+                                Este proceso facilita la creación de jerarquías y la reutilización de código al aprovechar las características de una clase base en otras clases derivadas.
+                        
+                                <img src="img/poo3.png">
+
+                            </p>
+                            <img src="img/poo2.png">
+                            <img src="img/poo.png">
+                            <p>Ejemplo de Herencia </p>
+                            <img src="img/herencia.png">
+                        </div>
+                    </li>
+                    <li>
+                        <button onclick="toggleInfo('tema6')">PATRONES DE DISEÑOS</button>
+                        <div id="tema6Info" class="info-oculta">
+                            <p>Los patrones de diseño son soluciones probadas para problemas comunes en el desarrollo de software. 
+                                Ofrecen modelos reutilizables que encapsulan las mejores prácticas de diseño,
+                                mejorando la eficiencia y la mantenibilidad del código. Estos patrones abordan desafíos específicos, 
+                                facilitando la creación de sistemas más flexibles y escalables. Se dividen en categorías como creacionales, 
+                                estructurales y de comportamiento, cada una destinada a resolver problemas de diseño particulares.
+                            </p>
+                            <h3>Patrones Creacionales</h3>
+                            <p>
+                                Los patrones creacionales son un tipo de patrón de diseño en ingeniería de software 
+                                que se centran en la creación de objetos de manera eficiente. 
+                                Estos patrones proporcionan mecanismos para instanciar objetos de varias maneras, 
+                                asegurando que la creación de estos objetos sea flexible, eficiente y desacoplada del sistema.
+                            </p>
+                            <h4>Singleton</h4>
+                            <p>Garantiza que una clase tenga una única instancia y proporciona un punto de acceso global a esa instancia.</p>
+                            <img src="img/singleton.png">
+
+                            <h3>Patrones Estructurales</h3>
+                            <p>Los patrones estructurales son un tipo de patrón de diseño en ingeniería de software que se centran en la composición de clases
+                            y objetos para formar estructuras más grandes y complejas. 
+                            Estos patrones ayudan a definir cómo las clases y los objetos interactúan 
+                            y se organizan para formar sistemas más extensos y adaptables.</p>
+
+                            <h4>Adapter</h4>
+                            <p>Permite que la interfaz de una clase existente se adapte para ser utilizada por otra interfaz, 
+                            facilitando la interoperabilidad entre sistemas incompatibles.</p>
+                            <img src="img/Adapter.png">
+
+                            <h3>Patrones de Comportamiento</h3>
+                            <p>Los patrones de comportamiento son un tipo de patrón de diseño en ingeniería de 
+                            software que se centran en cómo objetos interactúan 
+                            y comunican entre sí para lograr un comportamiento flexible y eficiente en un sistema.
+                            Estos patrones se ocupan de algoritmos, asignación de responsabilidades y colaboración entre objetos.</p>
+                            <h4>Strategy</h4>
+                            <p>Define una familia de algoritmos, encapsula cada uno y los hace intercambiables. 
+                            Permite que el algoritmo varíe independientemente de los clientes que lo utilizan.</p>
+                            <img src="img/Strategy.png">
+                            <img src="img/Strategy2.png">
+                            <img src="img/Strategy3.png">
+                        </div>
+                    </li>
+                </ul>
             </div>
 
-            <h4> Este es un codigo de POO en python donde lo que hicimos es crear dos objetos, Estudiante y Empleado, explciado paso a paso dentro 
-                del mismo codigo, cada objeto tiene sus propias caracteristicas y unas que commparten de la clase padre tambien conocidos como 
-                atributos, a su vez creando las personas como estudiante o empleado imprimimos sus datos sobrecargando la informacion y que asi 
-                esta se muestre en pantalla y sus conceptos
-            </h4>
-            <br>
-            <img src="./img/POO.png" alt="POO">
-            <br>
-
-            <div class="temas">
-                <ol> Algunos conceltos de la POO son <br><br>
-                    <li>Abstraccion: creando una clase con metodos y atributos estamos trabajando con abstraccion</li>
-                    <li>Encapsulamiento: se puede tener atributos publicos y privados dentro de las clases asociadas</li>
-                    <li>Polimorfismo: capacidad de las clases, funciones y operadores adopten distintos comportamientos, tambien se puede sobrecargar para mostrar datos</li>
-                    <li>Herencia: sirve para generalizar una clase, es deir los atributos comunes entre dos o mas clases</li><br>
-                </ol>
-            </div>
-            <h4>Aqui realizamos un ejemplo, en este caso un examen para adaptar de metros a pies y de pies a cabeza, donde le preguntamos al 
-                usuario por consola la accion que desea hacer de estas dos y asi pedirle el valor en dicha medida para poderla convertir a la 
-                que necesite</h4>
-            <img src="./img/adapter.png" alt="adapter">
-            <br>
-            <h4>En este ejercicio, es tambien un examen el cual lo que buscamos es que el usuario decida si desea recibir notificaciones por
-                alerta de meteoritos, si este indica que si entonces se le enviara una notificacion satisfactoriamente con el patron observer
-            </h4>
-            <img src="./img/observer.png" alt="observer">
-            <br>
-            <h4>Y por ultimo tenemos este ejemplo de modelo, vista, controlador el cual es algo simple pero a la vez muy util para poder
-                entender la funcion principal que es que el controlador maneja las clases modelo y vista, para que asi la vista maneje al modelo
-            </h4>
-            <img src="./img/MVC.png" alt="observer">
-            <br>
-            <h1>Y eso es todo por este corte, sigue con los siguientes para ver mas acerca de mi progreso!</h1>
-    
         <div class="botones">
             <a href="index.html"><button>Principal</button></a>
             <a href="Primer_corte.html"><button>Corte 1</button></a>
