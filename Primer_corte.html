@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styless.css">
+    <title>Primer Corte Lenguajes de Programacion</title>
+</head>
+<body>
+    <header>
+        <h1>PRIMER CORTE</h1>
+    </header>
+    
+    <div class="contenedor">
+        <div class="info">
+            <p>
+                Para comenzar por esta materia, lo primero que debimos aprender es un poco de python,
+                y asi fue como comenzamos, dando nuestros primeros pasos, las funcionalidades de este Lenguajes,
+                y en cada clase un poco mas de lo que podriamos llegar a hacer o simular con nuestros conocimientos 
+                para luego tener un examen simulando la sumatoria de Euler, y mas!
+                <br>
+                <br>
+            </p>
+            <script>
+                function toggleInfo(temaId) {
+                    var infoDiv = document.getElementById(temaId + 'Info');
+                    infoDiv.style.display = (infoDiv.style.display === 'none') ? 'block' : 'none';
+                }
+            </script>
+
+            <div class="temas">
+                <ul class="themes">
+                    <li>
+                        <button onclick="toggleInfo('tema1')">BASES DE PYTHON</button>
+                        <div id="tema1Info" class="info-oculta">
+                            <p>Las primeras clases fueron ayuda para adquirir conocimiento y tener un primer contacto para la programacion en el lenguaje de Python</p>
+                            <img src="img/InicioPython.png">
+                            <img src="img/TableroClase1.jpg">
+                        </div>
+                    </li>
+                    <li>
+                        <button onclick="toggleInfo('tema2')">FUNCIONES</button>
+                        <div id="tema2Info" class="info-oculta">
+                            <p>En estas siguientes clases aprendimos sobre las funciones:
+                            MAP, REDUCE Y FILTER. Tambien trabajamos con un dataset sobre humedales en la ciudad de Cali. 
+                            Aqui algunos de los codigos que alcance a guardar:
+                        <img src="img/TableroClase1.2.jpg">
+                        <img src="img/FuncionesPython.png">
+                        <img src="img/Funciones.png">
+                        <img src="img/FuncionesMap.png">
+                        </div>
+                    </li>
+                    <li>
+                        <button onclick="toggleInfo('tema3')">MAPA MENTAL</button>
+                        <div id="tema3Info" class="info-oculta">
+                            
+                        <p>Para resumir y sustentar el primer parcial, realizamos un mapa mental, donde se documenta todo lo relacionado a la programacion funcional en python:</p>
+                        <img src="img/Mapa mental con grupos coloreados.png">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        <h4>Aqui te muestro un codigo que realizamos acerca de la sumatoria de Euler </h4>
+        <br>
+        <img src="./img/euler_codigo.png" alt="codigo_euler">
+        <br>
+
+        <h4>Aqui te muestro un codigo que realizamos acerca de cargar arcchivos y usando la funcion MAP, reduce y asi mismo trabajar con listas y mas! </h4>
+        <br>
+        <img src="./img/ejemplo_codigo.png" alt="codigo_de_ejemplo">
+        <br>
+
+        <h4>En este ejemplo lo que hicimos fueron nuestro primeros pasos con singelton y a la vez adapter, dos patrones supremamente importantes
+            para despues trabajar con una metodologia de pago gracias al paton strategy, un login con singelton, miralos a continuacion:
+        </h4>
+        <br>
+        <h4>Primeros pasos singelton-strategy</h4>
+        <img src="./img/singelton-adapter.png" alt="Primeros_pasos_SyA">
+        <br>
+        <h4>Ejercicio de login singelton-strategy</h4>
+        <img src="./img/login.png" alt="login">
+        <br>
+        <h4>ejercicio de pagos strategy-adapter</h4>
+        <img src="./img/pagos.png" alt="pagos">
+        <br>
+
+        <br>
+        <br>
+        <h1>Y eso es todo por este corte, sigue con los siguientes para ver mas acerca de mi progreso!</h1>
+    
+    
+            <div class="botones">
+                <a href="index.html"><button>Principal</button></a>
+                <a href="Segundo_corte.html"><button>Corte 2</button></a>
+                <a href="Tercer_corte.html"><button>Corte 3</button></a>
+            </div>
+
+    </div>
+    </div>
+</body>
+</html>

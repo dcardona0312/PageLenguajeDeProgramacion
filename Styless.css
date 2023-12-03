@@ -1,0 +1,108 @@
+body {
+    background-color: rgba(6, 26, 92, 0.651);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative; 
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    -webkit-text-stroke: 1.5px black;
+}
+
+header::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('img/Fondopro.jpeg');
+    background-size: cover;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffffb6;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify; 
+}
+
+.info {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.botones {
+    margin-top: 20px;
+    text-align: center; 
+}
+
+button {
+    background-color: #023685;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: rgba(10, 86, 173, 0.555);
+}
+
+img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.themes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+.themes li {
+    width: 90%;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #b4b4b4;
+    border-radius: 2ch;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(190, 197, 238, 0.384);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.themes button {
+    background-color: #5b4caf;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; 
+}
+
+.themes button:hover {
+    background-color: rgba(10, 75, 173, 0.623);
+}
+
+.info-oculta {
+    display: none;
+}
